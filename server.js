@@ -1,4 +1,4 @@
-// "mongodb://127.0.0.1:27017";
+
 const mongoose = require("mongoose");
 const budgetModel = require("./Datamodule/dataBudget");
 const bodyParser = require("body-parser");
@@ -8,7 +8,7 @@ const app = express();
 const port = 3000;
 
 const corsOptions = {
-  origin: "http://localhost:3001",
+  origin: "http://localhost:3000",
 };
 app.use(cors(corsOptions));
 
@@ -53,7 +53,7 @@ app.post("/items", (req, res) => {
       })
       .catch((connectionError) => {
         console.error(connectionError);
-        res.status(400).json({error:'Internal Server error-Validation failed'})
+        res.status(400).json({error:'server error'});
       });
   })
   .catch((err) => {
@@ -63,5 +63,5 @@ app.post("/items", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`API served at http://localhost:${port}`);
+  console.log(`API at http://localhost:${port}`);
 });

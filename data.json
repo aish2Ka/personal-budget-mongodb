@@ -2,19 +2,19 @@
     "myBudget": [
         {
             "title": "Eat out",
-            "budget": 10
+            "budget": 11
         },
         {
             "title": "Rent",
-            "budget": 20
+            "budget": 19
         },
         {
             "title": "Grocery",
-            "budget": 10
+            "budget": 9
         },
         {
             "title": "Gas",
-            "budget": 15
+            "budget": 14
         },
         {
             "title": "Savings",
@@ -22,11 +22,11 @@
         },
         {
             "title": "Clothing",
-            "budget": 15
+            "budget": 19
         },
         {
             "title": "Entertainment",
-            "budget": 15
+            "budget": 22
         }
     ]
 }
